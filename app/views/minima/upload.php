@@ -2,11 +2,11 @@
   
   <section class="section background-white">
 
-    <p><?php // check_message() ?></p>
+    <p><?php check_message() ?></p>
     
     <div class="s-12 m-12 l-4 center">
       <h4 class="text-size-20 margin-bottom-20 text-dark text-center">Upload Image</h4>
-      <form method="post" enctype="multipart/form-data" name="contactForm" class="customform" method="post">
+      <form method="post" enctype="multipart/form-data" name="contactForm" class="customform">
           
         <div class="s-12"> 
           <input name="title" class="subject" placeholder="Title" title="Title" type="text" required>

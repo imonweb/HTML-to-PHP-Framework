@@ -22,9 +22,12 @@ class User
       if(is_array($data))
       {
         /*  logged in */
-        $_SESSION['user_id'] = $data[0]->userid;
         $_SESSION['user_name'] = $data[0]->username;
         $_SESSION['user_url'] = $data[0]->url_address;
+
+        header("Location:" . ROOT . "home");
+        die;
+
       } else {
         $_SESSION['error'] = "wrong username or password.";
       }
@@ -71,8 +74,9 @@ class User
       if(is_array($data))
       {
         /*  logged in */
-        $_SESSION['user_id'] = $data[0]->userid;
+
         $_SESSION['user_name'] = $data[0]->username;
+        $_SESSION['user_url'] = $data[0]->url_address;
 
         return true;
       }
@@ -81,5 +85,16 @@ class User
     return false;
 
   }
+
+  function logout()
+	{
+		//logged in
+		unset($_SESSION['user_name']);
+		unset($_SESSION['user_url']);
+
+		header("Location:". ROOT . "login");
+		die;
+	}
+
 
 }
