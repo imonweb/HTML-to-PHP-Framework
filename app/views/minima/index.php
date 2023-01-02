@@ -36,10 +36,10 @@
         </article>
 
          <br>
-        <!-- <section>
-          <a href="<?php // echo $data['prev_page']?>"><input type="button" class="s-12 submit-form button background-primary text-white" style="width: 200px;"  value="Prev"></a>
-          <a href="<?php // echo $data['next_page']?>"><input type="button" class="s-12 submit-form button background-primary text-white" style="width: 200px; float: right;"  value="Next"></a>
-        </section> -->
+        <section>
+          <a href="<?php echo $data['prev_page']?>"><input type="button" class="s-12 submit-form button background-primary text-white" style="width: 200px;"  value="Prev"></a>
+          <a href="<?php echo $data['next_page']?>"><input type="button" class="s-12 submit-form button background-primary text-white" style="width: 200px; float: right;"  value="Next"></a>
+        </section> 
       </main>
       
    

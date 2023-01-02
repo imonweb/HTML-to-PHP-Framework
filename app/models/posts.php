@@ -9,7 +9,7 @@ Class Posts
 		$page_number = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 		$page_number = $page_number < 1 ? 1 : $page_number;
 
-		$limit = 12;
+		$limit = 5;
 		$offset = ($page_number - 1) * $limit;
 
 		$query = "select * from images order by id desc limit $limit offset $offset";
